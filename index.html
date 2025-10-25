@@ -1,79 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Udita Monani - B.Tech CSE student, Machine Learning & AI enthusiast. Portfolio showcasing projects, research, and skills.">
-    <title>Udita Monani | ML & AI Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>Udita J. Monani | Portfolio</title>
+    <style>
+        /* --- General Body Styles --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
+        /* --- Container for Centering Content --- */
+        .container {
+            max-width: 960px;
+            margin: auto;
+            overflow: auto;
+            padding: 0 2rem;
+        }
+
+        /* --- Header Section --- */
+        header {
+            background: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header img.profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #333;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+
+        header .contact-info {
+            margin: 1rem 0;
+        }
+
+        header .contact-info a {
+            color: #0077b5;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        
+        header .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Main Content Section --- */
+        .main-content {
+            padding: 2rem 0;
+        }
+
+        /* --- General Section Styling --- */
+        .section {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            color: #333;
+            border-bottom: 2px solid #0077b5;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* --- About Me Section --- */
+        .section p {
+            margin-bottom: 1rem;
+        }
+
+        /* --- Experience and Education Items --- */
+        .item {
+            margin-bottom: 1.5rem;
+        }
+
+        .item h3 {
+            margin-bottom: 0.2rem;
+            font-size: 1.2rem;
+        }
+
+        .item .meta {
+            color: #555;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .item ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        /* --- Publications and Patents --- */
+        .publication-list li, .patent-list li {
+            margin-bottom: 1rem;
+        }
+        
+        .publication-list em, .patent-list em {
+            font-style: italic;
+            color: #444;
+        }
+
+        /* --- Skills Section --- */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-list strong {
+            display: inline-block;
+            width: 120px; /* Adjust width as needed */
+        }
+
+        /* --- Footer Section --- */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
 <body>
 
-    <!-- Header / About Me -->
     <header>
         <div class="container">
-            <img src="images/profile.jpg" alt="Udita Monani" class="profile-pic">
-            <h1>Udita Monani</h1>
-            <p>Third-year B.Tech CSE student at KIIT | Machine Learning & Deep Learning | Transformers & AI Projects</p>
+            <img src="profile.jpg" alt="Udita J. Monani" class="profile-photo">
+            <h1>Udita J. Monani</h1>
+            <div class="contact-info">
+                <a href="mailto:uditamonani@gmail.com">uditamonani@gmail.com</a> |
+                <a href="https://linkedin.com/in/udita-monani" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/uditamonani" target="_blank">GitHub</a> |
+                <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank">Google Scholar</a>
+            </div>
         </div>
     </header>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
+    <div class="main-content container">
 
-            <div class="project">
-                <img src="images/project1.png" alt="Project 1">
-                <h3>Smoking Detection from Vital Signs</h3>
-                <p>Developed ML models (Random Forest, XGBoost, and hybrid DL+ML) to identify smoking habits using vital
-                    signs.</p>
-                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-            </div>
-
-            <div class="project">
-                <img src="images/project2.png" alt="Project 2">
-                <h3>fMRI Tumor Detection</h3>
-                <p>Implemented a U-Net with attention mechanism for anomaly detection in fMRI images.</p>
-                <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
-            </div>
-
-            <!-- Add more projects as needed -->
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python, C++</li>
-                <li>Machine Learning & Deep Learning</li>
-                <li>Transformers & Attention Mechanisms</li>
-                <li>Data Analysis & Visualization</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:uditamonani@example.com">uditamonani@example.com</a></p>
-            <p>GitHub: <a href="https://github.com/uditamonani" target="_blank">github.com/uditamonani</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/uditamonani" target="_blank">linkedin.com/in/uditamonani</a>
+        <!-- About Me Section -->
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>
+                As a highly motivated and accomplished final-year Computer Science and Engineering student at the Kalinga Institute of Industrial Technology (KIIT), I have a strong foundation in machine learning, deep learning, and computer vision. My extensive research experience is demonstrated by numerous publications in international conferences and journals. I am eager to apply my skills and knowledge to solve challenging real-world problems in the field of Artificial Intelligence.
             </p>
-        </div>
-    </section>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <div class="item">
+                <h3>Kalinga Institute of Industrial Technology (KIIT)</h3>
+                <p class="meta">Bachelor of Technology in Computer Science and Engineering | 2022 – 2026</p>
+                <p>CGPA: 9.03/10.00</p>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section class="section" id="experience">
+            <h2>Professional Experience</h2>
+            <div class="item">
+                <h3>Centre for Artificial Intelligence and Robotics (DRDO)</h3>
+                <p class="meta">Research Intern - GIS Dept. | May 2025 – July 2025</p>
+                <ul>
+                    <li>Developed machine learning algorithms for defense and national security applications.</li>
+                    <li>Worked on computer vision systems for surveillance and threat detection.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>AtheroPoint LLC</h3>
+                <p class="meta">Machine Learning Research Intern – Stroke Monitoring | Sep 2023 – Apr 2025</p>
+                <ul>
+                    <li>Developed a CNN-based medical image classification model that achieved 81.38% accuracy.</li>
+                    <li>Built automated diagnostic pipelines for cardiovascular risk assessment with personalized and preventive diagnostic applications.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Research Publications Section -->
+        <section class="section" id="publications">
+            <h2>Research Publications</h2>
+            <ul class="publication-list">
+                <li><strong>Efficiency Analysis of CNN through Different Filters for Medical Image Classification.</strong> <em>2024 Second International Conference on Data Science and Information System (ICDSIS).</em></li>
+                <li><strong>Preventive, Personalized, and Precision Medicine and Biomarkers for Breast Cancer Diagnosis: Artificial Intelligence Framework.</strong> <em>Innovative Practice in Breast Health (2025).</em></li>
+                <li><strong>SMART Pricing Solutions for Used Cars Using Decision Tree and Random Forest Model.</strong> <em>Journal of Theoretical and Applied Information Technology (JATIT) (2025).</em></li>
+                <li><strong>Diabetes Prediction Using Ensembled Machine Learning Models.</strong> <em>2025 International Conference on Visual Analytics and Data Visualization (ICVADV).</em></li>
+                <li><strong>Leveraging Artificial Intelligence-based Deep Learning for Early Diagnosis of Alzheimer's Disease.</strong> <em>Machine Learning for Neurodegenerative Disorders, CRC Press (2025).</em></li>
+                <li>... (add other publications here)</li>
+            </ul>
+        </section>
+        
+        <!-- Patents Section -->
+        <section class="section" id="patents">
+            <h2>Patents</h2>
+            <ul class="patent-list">
+                <li><strong>Medical Image Classification Using Convolutional Neural Networks.</strong> <em>Indian Patent App. No. 202431093467 (2024).</em></li>
+                <li><strong>AI-based Oral Cancer Detection Box.</strong> <em>UK Patent App. No. 6424066 (2025).</em></li>
+            </ul>
+        </section>
+
+        <!-- Personal Projects Section -->
+        <section class="section" id="projects">
+            <h2>Personal Projects</h2>
+            <div class="item">
+                <h3>Satellite Image Change Detection Tool</h3>
+                <p class="meta">2025</p>
+                <p>Developed an unsupervised system for detecting urbanization and deforestation using SAR and optical image fusion with visualization of results in OSM and QGIS.</p>
+                <p><strong>Technologies:</strong> Python, OpenCV, GDAL, QGIS</p>
+            </div>
+            <div class="item">
+                <h3>Custom AI Chatbot for Research Assistance</h3>
+                <p class="meta">2025</p>
+                <p>Built an LLM-powered chatbot capable of retrieving, summarizing, and generating BibTeX references from academic papers.</p>
+                <p><strong>Technologies:</strong> Python, LangChain, OpenAI API</p>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="section" id="skills">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Languages:</strong> C, Python, MATLAB, Java, SQL</li>
+                <li><strong>Frameworks:</strong> NumPy, Pandas, Matplotlib, TensorFlow, PyTorch, Scikit-learn, XGBoost, Hugging Face, OpenCV, GDAL, PyQGIS, PostGIS</li>
+                <li><strong>Software:</strong> CST Studio, HFSS, MySQL, PostgreSQL, QGIS, PyCharm, Cursor, Microsoft, Draw.io, Git, GitHub, Scrum, VSC, NetBeans, JupyterNotebook, Eclipse, GoogleColab</li>
+            </ul>
+        </section>
+        
+        <!-- Extracurricular & Community Service Section -->
+        <section class="section" id="activities">
+            <h2>Extracurricular & Community Service</h2>
+             <div class="item">
+                <h3>UiPath Student Community (USC) KIIT</h3>
+                <p class="meta">Core Machine Learning Lead & Associate Coordinator | Jun 2023 – Present</p>
+                <ul>
+                    <li>Organized ML workshops and taught advanced mathematics for ML and DL to over 100 students.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>National Service Scheme (NSS)</h3>
+                <p class="meta">Project Head (Team Sparsh) | Dec 2022 – Jan 2025</p>
+                <ul>
+                    <li>Led community development projects aligned with UN SDGs 1 & 2, managing a team of over 20 volunteers.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
 
     <footer>
-        <p>© 2025 Udita Monani | Made with ❤️</p>
+        <p>&copy; 2025 Udita J. Monani. All rights reserved.</p>
     </footer>
 
 </body>
-
 </html>
